@@ -1,3 +1,5 @@
 .venv/
 install/
 pandas/
+__pycache__/
+.ipynb_checkpoints/
