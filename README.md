@@ -103,12 +103,6 @@ pip install -r requirements.txt
 # 2. Run the analysis
 jupyter notebook analysis-olympiad.ipynb
 
-# 3. Build the presentation
-python generate_presentation.py
-
-# 4. Export to PDF (optional)
-libreoffice --headless --convert-to pdf olympiad_summary/olympiad_summary.pptx
-```
 
 `requirements.txt`:
 
@@ -116,24 +110,13 @@ libreoffice --headless --convert-to pdf olympiad_summary/olympiad_summary.pptx
 pandas
 matplotlib
 jupyter
-python-pptx
 ```
-
-> If `python-pptx` is missing inside the notebook's kernel, install it via `{sys.executable}`:
->
-> ```python
-> import sys
-> !{sys.executable} -m pip install python-pptx
-> ```
-
----
 
 ## Outputs
 
 - `data/olympiad_results_clean.csv` — cleaned dataset (UTF-8, BOM).
-- `olympiad_summary/olympiad_summary.pptx` — 12-slide summary deck.
-- `olympiad_summary/olympiad_summary.pdf` — PDF export.
-- `olympiad_summary/charts/*.png` — charts used in the deck.
+- `presentation/olympiad_summary.pptx` — 12-slide summary deck.
+- `images/*.png` — charts used in the deck.
 
 ---
 
