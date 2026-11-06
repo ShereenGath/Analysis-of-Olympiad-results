@@ -16,9 +16,7 @@ Analysis of the olympiad dataset: **8,000 participants**, **10 regions**, **grad
 │   └── analysis-olympiad.ipynb       # Main analysis notebook
 ├── images/                           # Charts and figures
 ├── presentation/
-│   ├── olympiad_summary.pptx         # 12-slide summary deck
-│   └── olympiad_summary.pdf          # PDF export
-├── generate_presentation.py          # Builds the PPTX summary
+│   └── olympiad_summary.pptx         # 12-slide summary deck
 ├── requirements.txt
 └── README.md
 ```
@@ -101,8 +99,8 @@ For school rankings, only the **502 schools with ≥10 participants** should be 
 pip install -r requirements.txt
 
 # 2. Run the analysis
-jupyter notebook analysis-olympiad.ipynb
-
+jupyter notebook notebook/analysis-olympiad.ipynb
+```
 
 `requirements.txt`:
 
@@ -111,6 +109,8 @@ pandas
 matplotlib
 jupyter
 ```
+
+---
 
 ## Outputs
 
